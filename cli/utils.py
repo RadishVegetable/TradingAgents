@@ -128,9 +128,6 @@ def select_shallow_thinking_agent(provider) -> str:
 
     # Define shallow thinking llm engine options with their corresponding model names
     SHALLOW_AGENT_OPTIONS = {
-        "qwen": [
-            ("qwen3-0.6b", "qwen3-0.6b"),
-        ],
         "openai": [
             ("GPT-4o-mini - Fast and efficient for quick tasks", "gpt-4o-mini"),
             ("GPT-4.1-nano - Ultra-lightweight model for basic operations", "gpt-4.1-nano"),
@@ -156,6 +153,10 @@ def select_shallow_thinking_agent(provider) -> str:
         "ollama": [
             ("llama3.1 local", "llama3.1"),
             ("llama3.2 local", "llama3.2"),
+        ],
+        "qwen": [
+            ("qwen3-4b - Cheapest model for quick task", "qwen3-4b"),
+            ("qwen-plus - High performance model with expensive price", "qwen-plus")
         ]
     }
 
@@ -189,9 +190,6 @@ def select_deep_thinking_agent(provider) -> str:
 
     # Define deep thinking llm engine options with their corresponding model names
     DEEP_AGENT_OPTIONS = {
-        "qwen": [
-            ("qwen3-0.6b", "qwen3-0.6b"),
-        ],
         "openai": [
             ("GPT-4.1-nano - Ultra-lightweight model for basic operations", "gpt-4.1-nano"),
             ("GPT-4.1-mini - Compact model with good performance", "gpt-4.1-mini"),
@@ -221,6 +219,10 @@ def select_deep_thinking_agent(provider) -> str:
         "ollama": [
             ("llama3.1 local", "llama3.1"),
             ("qwen3", "qwen3"),
+        ],
+        "qwen": [
+            ("qwen3-4b - Cheapest model for quick task", "qwen3-4b"),
+            ("qwen-plus - High performance model with expensive price", "qwen-plus")
         ]
     }
     
